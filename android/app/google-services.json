@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1051065742352",
+    "project_id": "timetracker-83cff",
+    "storage_bucket": "timetracker-83cff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051065742352:android:80d99cb4fcdaae73e80695",
+        "android_client_info": {
+          "package_name": "com.timetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051065742352-ov5q8231cn349a7qnhnc4fqmqasbngeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoUdeiXDC-9KcCBEWusuv2_SNqO5pwh-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051065742352-ov5q8231cn349a7qnhnc4fqmqasbngeo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1051065742352-ssdt3u8djoggkad7hq3n77rktajamo24.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.timetracker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
