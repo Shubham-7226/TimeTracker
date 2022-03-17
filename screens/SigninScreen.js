@@ -40,7 +40,9 @@ const SigninScreen = ({navigation}) =>
                     iconName={"apple"}
                     iconColor={"#0a0a0a"}
                     btnBgColor={"#f0eded"}
-                    btnTitle={"Signin With Apple"}/> 
+                    btnTitle={"Signin With Apple"}>
+
+            </SocialButton>
         );
     };
 
@@ -100,7 +102,7 @@ const SigninScreen = ({navigation}) =>
                     btnBgColor={"#fcc9c5"}
                     btnTitle={"Signin With Gmail"}/>
 
-                {Platform.OS === "ios" ? iosContainer : ""}
+                {Platform.OS === "ios" ? iosContainer : null}
                 
             </View>
 
