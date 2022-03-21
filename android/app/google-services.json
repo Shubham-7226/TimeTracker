@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1051065742352-t5um66jspmup9kk8ibd96elb7d5frq62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timetracker",
+            "certificate_hash": "f17a8155a7fc18334dbe98a77f96f75301eaec20"
+          }
+        },
+        {
           "client_id": "1051065742352-ov5q8231cn349a7qnhnc4fqmqasbngeo.apps.googleusercontent.com",
           "client_type": 3
         }

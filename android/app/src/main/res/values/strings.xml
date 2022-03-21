@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TimeTracker</string>
+    <string name="facebook_app_id">662479475064103</string>
+    <string name="facebook_client_token">bb22782773c5138a34d659a436b780be</string>
 </resources>

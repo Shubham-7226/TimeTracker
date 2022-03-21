@@ -12,7 +12,7 @@ const SignUpScreen = ({navigation}) =>
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const {register} = useContext(AuthContext);
+    const {register, googleLogin, fbLogin} = useContext(AuthContext);
 
     const signUpHandler = () =>
     {
@@ -96,24 +96,33 @@ const SignUpScreen = ({navigation}) =>
             </TouchableOpacity>
 
             <View style={styles.socialContainer}>
-                <SocialButton 
-                    iconName={"facebook-official"} 
-                    iconColor={"#4267B2"}
-                    btnBgColor={"#c7d9fc"}
-                    btnTitle={"Signin With Facebook"}/>
+				<SocialButton
+					iconName={'facebook-official'}
+					iconColor={'#4267B2'}
+					btnBgColor={'#c7d9fc'}
+					btnTitle={'Signin With Facebook'}
+					onPress={() => fbLogin()}
+				/>
 
-                <SocialButton
-                    iconName={"google"}
-                    iconColor={"#EA4335"}
-                    btnBgColor={"#fcc9c5"}
-                    btnTitle={"Signin With Gmail"}/>
+				<SocialButton
+					iconName={'google'}
+					iconColor={'#EA4335'}
+					btnBgColor={'#fcc9c5'}
+					btnTitle={'Signin With Gmail'}
+					onPress={() => googleLogin()}
+				/>
 
-                <SocialButton
-                    iconName={"apple"}
-                    iconColor={"#0a0a0a"}
-                    btnBgColor={"#f0eded"}
-                    btnTitle={"Signin With Apple"}/> 
-            </View>
+                { Platform.OS === "android" ? (
+                    <SocialButton
+					iconName={'apple'}
+					iconColor={'black'}
+					btnBgColor={'#ccc'}
+					btnTitle={'Signin With Apple'}
+					onPress={() => {}}
+				/>
+                ) : null}
+
+			</View>
 
         </View>
     );
